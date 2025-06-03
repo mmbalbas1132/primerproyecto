@@ -1,0 +1,74 @@
+package com_dawlugo.primerproyecto.controller;
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+public class HelloController {
+    // Aquí puedes definir tus endpoints y lógica de negocio
+    // Por ejemplo, un endpoint simple que retorna un saludo
+
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "¡Hola, mundo!";
+    }
+
+    // Puedes agregar más métodos y lógica según sea necesario
+    @GetMapping("/greet")
+    public String greet() {
+        return "¡Saludos desde el controlador!";
+    }
+
+    // Puedes agregar más métodos y lógica según sea necesario
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "¡Bienvenido a Spring Boot, una aplicación para desarrollar APIs de Java!";
+    }
+
+    //@GetMapping con parámetros
+    @GetMapping("/greet/{name}")
+    public String greetWithName(@PathVariable String name) {
+        return "¡Hola, " + name + "! Bienvenido a Spring Boot.";
+    }
+
+    //@GetMapping con parámetros y tipo de dato
+    @GetMapping("/greet/{name}/{age}/{profesion}")
+    public String greetWithNameAndAge(@PathVariable String name,
+                                      @PathVariable int age,
+                                      @PathVariable String profesion) {
+        return "¡Hola, " + name + "! Tienes " + age + " y eres " + profesion + " años. Bienvenido a Spring Boot.";
+    }
+
+    //@GetMapping con @RequestParam
+    @GetMapping("/saludo")
+    public String greetWithRequestParam(@RequestParam String name,
+                                        @RequestParam int age,
+                                        @RequestParam String profesion) {
+        {
+            return "¡Hola, " + name + "! Tienes " + age + " años y eres " + profesion + ". Bienvenido a Spring Boot.";
+        }
+
+
+    }
+
+    // A partir del IMC en el parámetro de la URL devuelve el estado del peso como Peso insuficiente, Peso normal, Sobrepeso y Obesidad.
+    @GetMapping("/imc")
+    public String calculateImc(@RequestParam double imc) {
+        if (imc < 18.5) {
+            return "Peso insuficiente";
+        } else if (imc >= 18.5 && imc < 24.9) {
+            return "Peso normal";
+        } else if (imc >= 25 && imc < 29.9) {
+            return "Sobrepeso";
+        } else {
+            return "Obesidad";
+        }
+    }
+}
+
+
+
