@@ -1,0 +1,62 @@
+[
+  {
+    "nombre": "Cristiano",
+    "apellido": "Ronaldo",
+    "edad": 38,
+    "equipos": [
+      "Sporting de Lisboa",
+      "Manchester United",
+      "Real Madrid",
+      "Juventus",
+      "Manchester United",
+      "Al Nassr"
+    ]
+  },
+  {
+    "nombre": "Lionel",
+    "apellido": "Messi",
+    "edad": 36,
+    "equipos": [
+      "FC Barcelona",
+      "Paris Saint-Germain"
+    ]
+  },
+  {
+    "nombre": "Neymar",
+    "apellido": "Jr.",
+    "edad": 31,
+    "equipos": [
+      "Santos",
+      "FC Barcelona",
+      "Paris Saint-Germain"
+    ]
+  },
+  {
+    "nombre": "Kylian",
+    "apellido": "Mbappé",
+    "edad": 24,
+    "equipos": [
+      "AS Mónaco",
+      "Paris Saint-Germain"
+    ]
+  },
+  {
+    "nombre": "Karim",
+    "apellido": "Benzema",
+    "edad": 35,
+    "equipos": [
+      "Olympique Lyonnais",
+      "Real Madrid"
+    ]
+  },
+  {
+    "nombre": "Robert",
+    "apellido": "Lewandowski",
+    "edad": 35,
+    "equipos": [
+      "Borussia Dortmund",
+      "Bayern de Múnich",
+      "FC Barcelona"
+    ]
+  }
+]
