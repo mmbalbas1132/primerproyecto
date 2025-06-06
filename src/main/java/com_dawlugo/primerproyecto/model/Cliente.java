@@ -10,6 +10,13 @@ public class Cliente {
     private String nombre;
     private String apellido;
 
+    // Constructor por defecto
+    public Cliente() {
+        // Constructor por defecto
+    }
+
+    // Constructor con parámetros
+
     public Cliente(Long id, String nombre, String apellido) {
         this.id = id;
         this.nombre = nombre;
