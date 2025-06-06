@@ -1,5 +1,6 @@
 package com_dawlugo.primerproyecto.controller;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com_dawlugo.primerproyecto.model.Cliente; // Asegúrate de que la ruta del paquete sea correcta
 
@@ -35,11 +36,16 @@ public class clienteController {
 
     //Uso de @ResposeEntity para retornar un objeto JSON
     @GetMapping("/cliente/mostrar/{id}")
-    @ResponseBody
-    public Cliente obtenerClientePorId(@PathVariable Long id) {
-        // Simulando la obtención de un cliente por ID
+    ResponseEntity<Cliente> obtenerCliente(@PathVariable Long id) {
         Cliente cliente = new Cliente(id, "Nombre" + id, "Apellido" + id);
-        return cliente; // Retorna el objeto Cliente como JSON
+        // Aquí puedes buscar el cliente por ID en una base de datos o lista
+        // Por simplicidad, estamos creando un cliente ficticio
+        if (cliente != null) {
+            return ResponseEntity.ok(cliente); // Retorna el cliente encontrado
+        } else {
+            return ResponseEntity.notFound().build(); // Retorna 404 si no se encuentra el cliente
+        }
     }
+
 
 }
