@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-public class menuController {
+public class MenuController {
 
     @GetMapping("/menu/mostrar/{id}")
     public Plato mostrarPlatoPorId(@PathVariable Long id) {

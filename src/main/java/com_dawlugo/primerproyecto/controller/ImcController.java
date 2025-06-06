@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class imcController {
+public class ImcController {
     // A partir del IMC en el parámetro de la URL devuelve el estado del peso como Peso insuficiente, Peso normal, Sobrepeso y Obesidad.
     @GetMapping("/imc")
     public String calculateImc(@RequestParam double imc) {

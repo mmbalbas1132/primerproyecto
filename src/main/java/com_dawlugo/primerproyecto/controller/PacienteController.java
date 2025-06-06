@@ -9,7 +9,7 @@ import java.time.Period;
 import java.util.ArrayList;
 
 @RestController
-public class pacienteController {
+public class PacienteController {
     @GetMapping("/pacientesmenores")
     public String mostrarPacientesMenores() {
         ArrayList<Paciente> pacientes = new ArrayList<>();

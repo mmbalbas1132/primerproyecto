@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 
-public class fuelController {
+public class FuelController {
     // Aquí puedes definir tus endpoints y lógica de negocio relacionados con el combustible
     // Por ejemplo, un endpoint simple que retorna un mensaje de bienvenida
 

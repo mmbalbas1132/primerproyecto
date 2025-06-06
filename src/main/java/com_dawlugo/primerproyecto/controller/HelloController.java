@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class helloController {
+public class HelloController {
     // Aquí puedes definir tus endpoints y lógica de negocio
     // Por ejemplo, un endpoint simple que retorna un saludo
 

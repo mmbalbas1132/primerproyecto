@@ -10,7 +10,7 @@ import java.util.List;
 
 
 @RestController
-public class clienteController {
+public class ClienteController {
     // Aquí puedes definir tus endpoints y lógica de negocio
     // Por ejemplo, un endpoint simple que retorna un saludo
     //Con @postmapping puedes crear un nuevo cliente
