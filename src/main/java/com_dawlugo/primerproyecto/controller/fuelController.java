@@ -1,13 +1,12 @@
 package com_dawlugo.primerproyecto.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 
-public class FuelController {
+public class fuelController {
     // Aquí puedes definir tus endpoints y lógica de negocio relacionados con el combustible
     // Por ejemplo, un endpoint simple que retorna un mensaje de bienvenida
 

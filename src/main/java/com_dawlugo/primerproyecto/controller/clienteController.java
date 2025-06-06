@@ -9,9 +9,10 @@ import java.util.List;
 
 
 @RestController
-public class HolaController {
+public class clienteController {
     // Aquí puedes definir tus endpoints y lógica de negocio
     // Por ejemplo, un endpoint simple que retorna un saludo
+    //Con @postmapping puedes crear un nuevo cliente
 
     @PostMapping("/cliente")
     public void nuevoCliente(@RequestBody Cliente cli) {

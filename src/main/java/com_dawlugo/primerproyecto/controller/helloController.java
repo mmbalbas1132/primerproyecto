@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class HelloController {
+public class helloController {
     // Aquí puedes definir tus endpoints y lógica de negocio
     // Por ejemplo, un endpoint simple que retorna un saludo
 
@@ -44,6 +44,8 @@ public class HelloController {
     }
 
     //@GetMapping con @RequestParam
+    //El @RequestParam se utiliza para obtener parámetros de la URL
+    //La diferencia entre @PathVariable y @RequestParam es que el primero se utiliza para obtener valores de la ruta de la URL, mientras que el segundo se utiliza para obtener valores de los parámetros de consulta (query parameters) en la URL.
     @GetMapping("/saludo")
     public String greetWithRequestParam(@RequestParam String name,
                                         @RequestParam int age,
